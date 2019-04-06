@@ -1,0 +1,10 @@
+$(function(){
+	$.ajax({
+		type:'get',
+		url:'data/emp.html',
+		dataType:'json',
+		success:function(response,status,xhr){
+			alert(response[0]["name"]);
+		}
+	});
+});
